@@ -1,0 +1,13 @@
+<suitelet scriptid="customscript_danthonia_suitelet">
+    <name>Danthonia Expense Management Dashboard</name>
+    <notifyowner>T</notifyowner>
+    <scriptfile>[/SuiteScripts/Danthonia/expense_dashboard_suitelet.js]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_danthonia_suitelet">
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <status>TESTING</status>
+            <title>Danthonia Expense Management</title>
+        </scriptdeployment>
+    </scriptdeployments>
+</suitelet>
