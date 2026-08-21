@@ -1,12 +1,24 @@
 <suitelet scriptid="customscript_danthonia_suitelet">
     <name>Danthonia Expense Management Dashboard</name>
     <notifyowner>T</notifyowner>
-    <scriptfile>[/SuiteScripts/Danthonia/expense_dashboard_suitelet.js]</scriptfile>
+    <scriptfile>[/SuiteScripts/dd/ExpenseMgmt/expense_dashboard_suitelet.js]</scriptfile>
     <scriptdeployments>
         <scriptdeployment scriptid="customdeploy_danthonia_suitelet">
+            <allroles>F</allroles>
+            <audslctrole>ADMINISTRATOR|[scriptid=customrole_cca_mfg_prm_cfo]</audslctrole>
             <isdeployed>T</isdeployed>
+            <links>
+                <link>
+                    <linkcategory>ACCOUNTCENTERFINANCIALREPORTS</linkcategory>
+                    <linklabel>DD | Expense Management</linklabel>
+                </link>
+                <link>
+                    <linkcategory>BASICREPORTSCUSTOM</linkcategory>
+                    <linklabel>DD | Expense Management</linklabel>
+                </link>
+            </links>
             <loglevel>DEBUG</loglevel>
-            <status>TESTING</status>
+            <status>RELEASED</status>
             <title>Danthonia Expense Management</title>
         </scriptdeployment>
     </scriptdeployments>

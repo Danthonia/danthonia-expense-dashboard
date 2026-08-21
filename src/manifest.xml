@@ -5,5 +5,8 @@
         <features>
             <feature required="true">SERVERSIDESCRIPTING</feature>
         </features>
+        <objects>
+            <object>customrole_cca_mfg_prm_cfo</object>
+        </objects>
     </dependencies>
 </manifest>

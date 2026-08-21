@@ -13,8 +13,8 @@ define([
 ], (file, log, url, dashboardService) => {
     const SCRIPT_ID = 'customscript_danthonia_suitelet';
     const DEPLOYMENT_ID = 'customdeploy_danthonia_suitelet';
-    const CLIENT_PATH = 'SuiteScripts/Danthonia/expense_dashboard_client.js';
-    const CSS_PATH = 'SuiteScripts/Danthonia/expense_dashboard.css';
+    const CLIENT_PATH = 'SuiteScripts/dd/ExpenseMgmt/expense_dashboard_client.js';
+    const CSS_PATH = 'SuiteScripts/dd/ExpenseMgmt/expense_dashboard.css';
     const CHART_JS_URL = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js';
     const COMMUNITY_GENERAL_NAMES = ['Community: Genral', 'Community: General'];
 

@@ -41,10 +41,10 @@ The default category is expense account. Users can switch to department grouping
 
 ## Files
 
-- `src/FileCabinet/SuiteScripts/Danthonia/expense_dashboard_suitelet.js` - HTML/JSON Suitelet endpoint
-- `src/FileCabinet/SuiteScripts/Danthonia/expense_dashboard_service.js` - SuiteQL and aggregation logic
-- `src/FileCabinet/SuiteScripts/Danthonia/expense_dashboard_client.js` - Chart.js rendering and interaction
-- `src/FileCabinet/SuiteScripts/Danthonia/expense_dashboard.css` - responsive dashboard styling
+- `src/FileCabinet/SuiteScripts/dd/ExpenseMgmt/expense_dashboard_suitelet.js` - HTML/JSON Suitelet endpoint
+- `src/FileCabinet/SuiteScripts/dd/ExpenseMgmt/expense_dashboard_service.js` - SuiteQL and aggregation logic
+- `src/FileCabinet/SuiteScripts/dd/ExpenseMgmt/expense_dashboard_client.js` - Chart.js rendering and interaction
+- `src/FileCabinet/SuiteScripts/dd/ExpenseMgmt/expense_dashboard.css` - responsive dashboard styling
 - `src/Objects/customscript_danthonia_suitelet.xml` - script and deployment object
 
 ## Deploy
@@ -56,7 +56,7 @@ suitecloud project:validate
 suitecloud project:deploy
 ```
 
-The deployment is intentionally set to `TESTING`. After validation in the sandbox, change the deployment status to `RELEASED` in NetSuite or in the object XML when the intended roles should have access.
+The deployment is set to `RELEASED`, uses `DEBUG` logging, and is available to the `CCA - Steward` and `Administrator` roles. It is linked from the Accounting and Classic centers under Reports.
 
 The executing role needs access to SuiteAnalytics Workbook/query data plus the relevant transaction, account, department and subsidiary records. The Suitelet is not configured for unauthenticated external access.
 
